@@ -77,6 +77,25 @@ handshakes, verdict `decidable c2`, certificate union = 2, kappa = 1/3, matching
 all four pre-registered dimensions. Re-judging at 11, 244, and 254 samples gives
 the identical verdict.
 
+## Citation
+
+If you use this artifact, cite the archived snapshot rather than the moving
+GitHub copy:
+
+```bibtex
+@software{huang_shadow_infra_artifact,
+  author = {Huang, Wensheng},
+  title  = {Artifact: Solvability-Driven Inference of Shadow Infrastructure},
+  year   = {2026},
+  doi    = {10.5281/zenodo.23955193},
+  url    = {https://doi.org/10.5281/zenodo.23955193}
+}
+```
+
+Version DOI `10.5281/zenodo.23955193` resolves to this snapshot; concept DOI
+`10.5281/zenodo.23955192` resolves to the latest version. The archived snapshot
+is the `V1.0.1` release of `sirlong2026/solvability-shadow-infrastructure-artifact`.
+
 ## License
 
 Code: MIT. Data and documentation: CC BY 4.0. RIPE Atlas derived data remain
