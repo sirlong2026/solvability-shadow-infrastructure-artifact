@@ -1,0 +1,26 @@
+{
+  "title": "Artifact: Solvability-Driven Inference of Shadow Infrastructure",
+  "description": "Redacted reproduction artifact for the manuscript submitted to IEEE Transactions on Network and Service Management. Contains the four-state verdict engine, pre-registered grading truths, nine redacted testbed and three-machine scenarios, derived RIPE Atlas judgment summaries, figure audit readings, the full formalization behind the two headline properties, and a one-command check of every reported number. All public IPv4 addresses, credentials, host names, third-party product documentation and raw RIPE Atlas results are removed; private lab addresses are kept only because the topology scripts require them. Data and documentation are CC BY 4.0; code is MIT (see LICENSE).",
+  "creators": [
+    {
+      "name": "Huang, Wensheng",
+      "orcid": "0009-0004-5845-6665",
+      "affiliation": "School of Intelligent Engineering, Nanjing Open University, Nanjing 211200, China"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "language": "eng",
+  "version": "1.0.0",
+  "keywords": [
+    "Internet measurement",
+    "shadow infrastructure",
+    "solvability diagnostic matrix",
+    "multi-vantage measurement",
+    "reproducibility",
+    "RIPE Atlas",
+    "pre-registered grading",
+    "observability gate"
+  ]
+}
