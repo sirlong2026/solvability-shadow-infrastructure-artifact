@@ -1,0 +1,4 @@
+observer,certificate count,digests (first 12),SNI unique values,TTL set,shadow (implied/visible),source
+A LT,2,461455fd18e4;c0fdf35a5f35,2,[249],6/3,sLT.json + x1_compare.json
+B s34,1,c0fdf35a5f35,1,[63],1/0,s34.json + x1_compare.json
+verdict,likely_pool,four-state=决定可判,winner=c2,kappa=1.0,shadow warning=True,evaluate.py x1 (all pre-registered hits; 3 intermediate rounds excluded)

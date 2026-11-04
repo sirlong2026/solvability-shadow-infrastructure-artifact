@@ -1,0 +1,42 @@
+{
+  "source": "RIPE Atlas measurement 231739937 (public API)",
+  "records": 257,
+  "sample": [
+    {
+      "msm_id": 231739937,
+      "prb_id": 27294,
+      "timestamp": 1793717192,
+      "cert_fingerprint_prefix": null,
+      "result_ok": true
+    },
+    {
+      "msm_id": 231739937,
+      "prb_id": 35796,
+      "timestamp": 1793717167,
+      "cert_fingerprint_prefix": null,
+      "result_ok": true
+    },
+    {
+      "msm_id": 231739937,
+      "prb_id": 1010241,
+      "timestamp": 1793717459,
+      "cert_fingerprint_prefix": null,
+      "result_ok": true
+    },
+    {
+      "msm_id": 231739937,
+      "prb_id": 27294,
+      "timestamp": 1793718096,
+      "cert_fingerprint_prefix": null,
+      "result_ok": true
+    },
+    {
+      "msm_id": 231739937,
+      "prb_id": 35796,
+      "timestamp": 1793718065,
+      "cert_fingerprint_prefix": null,
+      "result_ok": true
+    }
+  ],
+  "note": "Only non-address fields retained; re-fetch full results from the public API."
+}

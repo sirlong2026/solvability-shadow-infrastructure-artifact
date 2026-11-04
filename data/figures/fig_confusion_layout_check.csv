@@ -1,0 +1,62 @@
+text,x0,y0,x1,y1
+9,368,441,387,468
+S0–S7 + X1,342,433,414,445
+0,454,446,466,463
+0,537,446,549,463
+0,619,446,631,463
+Decidable,265,445,330,459
+Decidable,332,497,389,537
+0,372,393,384,409
+0,454,393,466,409
+0,537,393,549,409
+0,619,393,631,409
+Conditionally decidable,177,392,330,406
+Conditionally decidable,345,457,472,537
+0,372,339,384,356
+0,454,339,466,356
+0,537,339,549,356
+0,619,339,631,356
+Indistinguishable,219,338,330,352
+Indistinguishable,459,475,555,537
+0,372,285,384,302
+0,454,285,466,302
+0,537,285,549,302
+0,619,285,631,302
+Unobservable,240,284,330,299
+Unobservable,560,485,637,537
+(a) Four-state confusion mat,82,559,596,596
+All 9 scenarios land on the ,82,227,497,240
+Winners: single-host collaps,82,195,498,207
+κ: 1.0 ×8; 0.833 ×1 (S4: mul,82,169,460,181
+Auxiliary axes (orthogonal):,82,142,472,154
+3 intermediate rounds (incom,82,115,520,127
+① all six dimensions unobser,756,420,1052,432
+√,1254,416,1268,439
+κ=0.000,1241,403,1282,414
+—,1256,439,1266,449
+regression anchor: test_kapp,1297,421,1496,431
+"② o$_4$ missing: {c$_1$,c$_8",889,355,1052,367
+√,1196,352,1210,375
+κ=0.833,1182,339,1223,349
+—,1198,374,1208,385
+regression anchor: test_o4_u,1297,356,1496,367
+③ rotation seen from one van,733,291,1052,303
+√,1138,288,1152,311
+κ=0.667,1124,275,1165,285
+c2,1139,310,1151,320
+computed live for this figur,1297,292,1433,302
+④ consistent negatives on al,768,227,1052,239
+√,1080,223,1094,246
+κ=1.000,1066,210,1107,220
+single,1072,245,1101,256
+measured anchors: S0/S3/S5/S,1297,228,1449,238
+⑤ o$_5$ honestly degraded; v,797,162,1052,174
+√,1080,159,1094,182
+κ=0.833,1066,146,1107,156
+c4,1081,181,1093,191
+measured anchor: S4 (same co,1297,163,1499,173
+Decidable,1040,507,1094,544
+Conditionally decidable,1032,469,1152,544
+Indistinguishable,1123,487,1210,544
+Unobservable,1195,495,1268,544
+(b) Four-state reachability ,772,583,1390,599

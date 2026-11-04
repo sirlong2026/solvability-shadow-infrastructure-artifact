@@ -1,0 +1,64 @@
+{
+ "pair": [
+  "sens1",
+  "sens2"
+ ],
+ "targets": [
+  {
+   "ip": "10.198.3.14",
+   "verdict": "likely_pool",
+   "verdict_zh": "疑似多后端（单信号）",
+   "confidence": "medium",
+   "hidden_router": null,
+   "evidence": [
+    "★共享前端多站点（S6）：同一 IP 按 SNI 分发 3 种证书 → ≥3 个虚拟主机共享一个网络入口：461455fd18e4→['b.mp.test']; 98fb6409a4f3→['d.mp.test']; c0fdf35a5f35→['a.mp.test']",
+    "TLS 证书摘要两侧一致（{'98fb6409a4f3'}）→ 后端同一（若 LB 对两源均粘性则此论断减弱，见脚注）",
+    "[A] TTL 推断路由数(1)与 trace 显形(1)一致 → 无隐藏跳",
+    "[B] TTL 推断路由数(1)与 trace 显形(1)一致 → 无隐藏跳",
+    "双传感器到目标路径共享段长度=1，A独有=['10.198.1.1']，B独有=['10.198.2.1']"
+   ],
+   "caveats": [],
+   "four_state": {
+    "kappa": 1.0,
+    "obs": {
+     "o1": "negative",
+     "o2": "negative",
+     "o3": "negative",
+     "o4": "positive",
+     "o5": "negative",
+     "o6": "negative"
+    },
+    "aux": {
+     "hidden_router": false,
+     "chain": false,
+     "o2_confounded_suppressed": []
+    },
+    "support": {
+     "c1": 4,
+     "c2": 0,
+     "c3": 1,
+     "c4": 1,
+     "c5": 5,
+     "c8": 4
+    },
+    "eliminated": {
+     "c1": "o4=positive ⇌ 预测 -（证伪淘汰）",
+     "c2": "o6=negative ⇌ 预测 +（证伪淘汰）",
+     "c3": "o6=negative ⇌ 预测 +（证伪淘汰）",
+     "c4": "o1=negative ⇌ 预测 +（证伪淘汰）",
+     "c8": "o4=positive ⇌ 预测 -（证伪淘汰）"
+    },
+    "V": "决定可判",
+    "equivalent": [
+     "c5"
+    ],
+    "winner": "c5",
+    "basis": [
+     "c5 支持度 5，其余存活假设持平度不足"
+    ],
+    "family": "multi"
+   }
+  }
+ ],
+ "independence": []
+}

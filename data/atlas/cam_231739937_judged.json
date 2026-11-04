@@ -1,0 +1,69 @@
+{
+  "msm": 231739937,
+  "judged_utc": "2026-11-04T20:20Z",
+  "samples": {
+    "results": 257,
+    "probes_ok": 3,
+    "pair": [
+      27294,
+      1010241
+    ]
+  },
+  "realized": {
+    "V": "决定可判",
+    "winner": "c2",
+    "kappa": 0.333,
+    "obs": {
+      "o1": "unobservable",
+      "o2": "unobservable",
+      "o3": "positive",
+      "o4": "unobservable",
+      "o5": "unobservable",
+      "o6": "positive"
+    },
+    "equivalent": [
+      "c2"
+    ],
+    "aux": {
+      "hidden_router": false,
+      "chain": false,
+      "o2_confounded_suppressed": []
+    }
+  },
+  "fleet": {
+    "union_certs": 2,
+    "probes_with_cert": 3,
+    "probes_multi_cert_48h": 3,
+    "o3_positive_rate": 1.0,
+    "dst_ips": [
+      "PILOT_VIP"
+    ]
+  },
+  "pre_registered": {
+    "o1": "positive（若同靶补建 ping 测量：64/255 双 TTL；sslcert-only 时 unobservable）",
+    "o2": "unobservable（Atlas 无 ICMP Timestamp）",
+    "o3": "positive（≥3 握手/视角后证书轮换命中）",
+    "o4": "unobservable（单 SNI 名）",
+    "o5": "unobservable（无 trace）",
+    "o6": "positive（跨视角证书并集 = 2）",
+    "kappa": "2/6=0.333（sslcert-only，恰好过闸）；0.5（加 ping 测量）",
+    "verdict": "likely_pool",
+    "four_state": "decidable",
+    "winner": "c2（round-robin）",
+    "cert_union": 2,
+    "aux": {
+      "hidden_router": false,
+      "chain": false
+    },
+    "winner_normalized": "c2"
+  },
+  "match": {
+    "four_state": true,
+    "winner": true,
+    "union": true,
+    "kappa": true
+  },
+  "engine_fix": "κ gate compared a 3-decimal-rounded κ against 1/3, turning exact 2/6 into a false refusal; fixed by comparing the exact fraction (display still rounded). 29/29 semantics tests green; archived batches re-judged identical.",
+  "note": "final full-window re-judge at campaign close (257 results, 254 successful); verdict unchanged across 11 -> 244 -> 254 samples",
+  "status": "CAMPAIGN CLOSED (final dataset archived)"
+}

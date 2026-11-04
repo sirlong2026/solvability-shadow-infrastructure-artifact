@@ -1,0 +1,18 @@
+source,scenario/mode,truth or trigger,output state,winner,kappa,batch/anchor,status
+physical grading (counted),S0,single host (collapsed),Decidable,single,1.0,run_20261031_014938,in matrix
+physical grading (counted),S1,c$_2$ round-robin LB,Decidable,c2,1.0,run_20261031_014938,in matrix
+physical grading (counted),S2,c$_3$ sticky LB,Decidable,c3,1.0,run_20261031_014938,in matrix
+physical grading (counted),S3,single host (collapsed),Decidable,single,1.0,run_20261031_014938,in matrix
+physical grading (counted),S4,c$_4$ multi-egress,Decidable,c4,0.833,run_20261031_014938,in matrix
+physical grading (counted),S5,single host (collapsed),Decidable,single,1.0,run_20261031_014938,in matrix
+physical grading (counted),S6,c$_5$ SNI front end,Decidable,c5,1.0,run_20261031_014938,in matrix
+physical grading (counted),S7,single host (collapsed),Decidable,single,1.0,run_20261031_014938,in matrix
+physical grading (counted),X1,c$_2$ round-robin LB,Decidable,c2,1.0,lab20/x1,in matrix
+physical grading (excluded),X1,—,Decidable,consistent_single,—,2026-10-30T17:05:00Z,intermediate round (incomplete deployment / pre-fix); excluded
+physical grading (excluded),X1,—,Decidable,consistent_single,—,2026-10-30T17:11:00Z,intermediate round (incomplete deployment / pre-fix); excluded
+physical grading (excluded),X1,—,Indistinguishable,consistent_single,—,2026-10-30T17:38:19Z,intermediate round (incomplete deployment / pre-fix); excluded
+"engine, computed live",① all six dimensions unobservable (no replies at all),trigger mode,Unobservable,—,0.0,regression anchor: test_kappa_floor_gate,reachability matrix
+"engine, computed live","② o$_4$ missing: {c$_1$,c$_8$} ties c$_5$",trigger mode,Indistinguishable,—,0.833,regression anchor: test_o4_unobservable,reachability matrix
+"engine, computed live",③ rotation seen from one vantage only (peer TLS down),trigger mode,Conditionally decidable,c2,0.667,computed live for this figure,reachability matrix
+"engine, computed live",④ consistent negatives on all dimensions (control),trigger mode,Decidable,single,1.0,measured anchors: S0/S3/S5/S7,reachability matrix
+"engine, computed live",⑤ o$_5$ honestly degraded; verdict still decides,trigger mode,Decidable,c4,0.833,measured anchor: S4 (same construction),reachability matrix

@@ -1,0 +1,225 @@
+{
+ "schema": "sensor-report/v2",
+ "sensor_id": "sens1",
+ "host": "lab-host-redacted",
+ "os": "linux",
+ "python": "3.10.12",
+ "t_start": "2026-10-30T15:50:52Z",
+ "allow_cidr": [
+  "10.198.0.0/16"
+ ],
+ "source_ips": [
+  "10.198.1.10",
+  "PUBLIC_LANDMARK"
+ ],
+ "targets": [
+  {
+   "ip": "10.198.3.10",
+   "ttl": {
+    "supported": true,
+    "ttl_set": [
+     63
+    ],
+    "samples": 15,
+    "sent": 15,
+    "rtt_ms": [
+     0.08,
+     0.1,
+     0.11,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.11,
+     0.12,
+     0.11
+    ]
+   },
+   "skew": {
+    "supported": true,
+    "points": [
+     [
+      0.0,
+      1977910704
+     ],
+     [
+      0.0,
+      1977911705
+     ],
+     [
+      0.0,
+      1977912707
+     ],
+     [
+      0.0,
+      1977913708
+     ],
+     [
+      0.0,
+      1977914709
+     ],
+     [
+      0.0,
+      1977915710
+     ],
+     [
+      0.0,
+      1977916711
+     ],
+     [
+      0.0,
+      1977917713
+     ],
+     [
+      0.0,
+      1977918714
+     ],
+     [
+      0.0,
+      1977919715
+     ],
+     [
+      0.0,
+      1977920716
+     ],
+     [
+      0.1,
+      1977921718
+     ],
+     [
+      0.1,
+      1977922719
+     ],
+     [
+      0.1,
+      1977923720
+     ],
+     [
+      0.1,
+      1977924721
+     ],
+     [
+      0.1,
+      1977925723
+     ],
+     [
+      0.1,
+      1977926724
+     ],
+     [
+      0.1,
+      1977927725
+     ],
+     [
+      0.1,
+      1977928726
+     ],
+     [
+      0.1,
+      1977929728
+     ]
+    ],
+    "slope_ms_per_ms": 207979.53685,
+    "ntp_jumps": 19,
+    "backend_jumps": 0,
+    "noise_jumps": 0,
+    "max_step": 1002
+   },
+   "tls": {
+    "supported": true,
+    "port": 443,
+    "unique_hashes": 1,
+    "hashes": [
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35"
+    ],
+    "ciphers": [
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384"
+    ],
+    "sni_map": {
+     "a.mp.test": "c0fdf35a5f35",
+     "b.mp.test": "c0fdf35a5f35",
+     "d.mp.test": "c0fdf35a5f35"
+    },
+    "sni_unique": 1,
+    "error": []
+   },
+   "rtt": {
+    "supported": true,
+    "samples": [
+     0.21,
+     0.07,
+     0.06,
+     0.06,
+     0.06,
+     0.06,
+     0.06
+    ]
+   },
+   "path": {
+    "supported": true,
+    "hops": [
+     "10.198.1.1",
+     "10.198.3.10"
+    ],
+    "reached": true,
+    "tool": "tracepath"
+   },
+   "ping": {
+    "supported": true,
+    "received": 4,
+    "sent": 4
+   },
+   "gate": {
+    "o1": {
+     "observable": true,
+     "reason": ""
+    },
+    "o2": {
+     "observable": true,
+     "reason": ""
+    },
+    "o3": {
+     "observable": true,
+     "reason": ""
+    },
+    "o4": {
+     "observable": true,
+     "reason": ""
+    },
+    "o5": {
+     "observable": true,
+     "reason": ""
+    }
+   },
+   "kappa_view": 1.0
+  }
+ ],
+ "landmarks": [],
+ "t_end": "2026-10-30T15:51:18Z"
+}

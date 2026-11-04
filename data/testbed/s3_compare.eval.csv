@@ -1,0 +1,2 @@
+scenario,target,verdict,confidence,hidden,hit,four_state,four_winner,kappa,ts
+s3,10.198.3.13,consistent_single,high,1,1,决定可判,single,1.0,2026-10-30T15:50:50Z

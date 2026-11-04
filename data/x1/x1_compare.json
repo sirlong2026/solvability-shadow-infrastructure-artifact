@@ -1,0 +1,84 @@
+{
+ "pair": [
+  "LT",
+  "s34"
+ ],
+ "targets": [
+  {
+   "ip": "PUBLIC_LANDMARK",
+   "verdict": "likely_pool",
+   "verdict_zh": "疑似多后端（单信号）",
+   "confidence": "medium",
+   "hidden_router": "影子路由嫌疑：[A]≈3跳不回ICMP; [B]≈1跳不回ICMP",
+   "evidence": [
+    "TLS 证书摘要两侧并集 2 种（A:['461455fd18e4', 'c0fdf35a5f35'] B:['c0fdf35a5f35']）→ 后端 ≥2",
+    "[A] ★影子路由线索：TTL 推断途经 6 台路由，trace 仅显 3 台 → 约 3 跳不回 ICMP（隐身路由器/中间盒，独立于'后端数'结论）",
+    "[B] ★影子路由线索：TTL 推断途经 1 台路由，trace 仅显 0 台 → 约 1 跳不回 ICMP（隐身路由器/中间盒，独立于'后端数'结论）",
+    "双传感器到目标路径共享段长度=1，A独有=['10.0.254.2', '10.10.254.1', 'PUBLIC_ADDR_02']，B独有=[]"
+   ],
+   "caveats": [
+    "skew 在 [A] 不可观测（主机未实现 ICMP Timestamp（常态））"
+   ],
+   "four_state": {
+    "kappa": 1.0,
+    "obs": {
+     "o1": "negative",
+     "o2": "negative",
+     "o3": "positive",
+     "o4": "negative",
+     "o5": "positive",
+     "o6": "positive"
+    },
+    "aux": {
+     "hidden_router": true,
+     "chain": false,
+     "o2_confounded_suppressed": [
+      "c2.o2（共钟共因，O₂ 记而不杀）",
+      "c3.o2（共钟共因，O₂ 记而不杀）"
+     ]
+    },
+    "support": {
+     "c1": 3,
+     "c2": 2,
+     "c3": 1,
+     "c4": 0,
+     "c5": 2,
+     "c8": 3
+    },
+    "eliminated": {
+     "c1": "o6=positive ⇌ 预测 -（证伪淘汰）",
+     "c3": "o3=positive ⇌ 预测 -（证伪淘汰）",
+     "c4": "o3=positive ⇌ 预测 -（证伪淘汰）",
+     "c5": "o6=positive ⇌ 预测 -（证伪淘汰）",
+     "c8": "o6=positive ⇌ 预测 -（证伪淘汰）"
+    },
+    "V": "决定可判",
+    "equivalent": [
+     "c2"
+    ],
+    "winner": "c2",
+    "basis": [
+     "c2 支持度 2，其余存活假设持平度不足"
+    ],
+    "family": "multi"
+   }
+  }
+ ],
+ "independence": [
+  {
+   "landmark": "PUBLIC_LANDMARK",
+   "common_prefix_hops": 1,
+   "paths": {
+    "LT": [
+     "PUBLIC_LANDMARK",
+     "PUBLIC_ADDR_02",
+     "10.10.254.1",
+     "10.0.254.2"
+    ],
+    "s34": [
+     "PUBLIC_LANDMARK"
+    ]
+   }
+  }
+ ]
+}

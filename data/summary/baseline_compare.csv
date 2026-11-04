@@ -1,0 +1,10 @@
+scenario;truth_structure;truth_shadow;R_TTL;R_TTL_hit;R_CERT;R_CERT_hit;R_UNION;R_UNION_hit;MATRIX;MATRIX_hit;matrix_shadow_miss
+S0;single;-;single;hit;single;hit;single;hit;at_most_one;hit;0
+S1;pool;-;single;miss;pool;hit;pool;hit;pool;hit;0
+S2;pool;-;single;miss;pool;hit;single;miss;pool;hit;0
+S3;single;hidden_hop;single;hit;single;hit;single;hit;at_most_one(+shadow);hit;0
+S4;pool;-;pool;hit;single;miss;pool;hit;pool;hit;0
+S5;at_most_one;-;single;hit;single;hit;single;hit;at_most_one;hit;0
+S6;single;-;single;hit;single;hit;single;hit;single;hit;0
+S7;single;chain;pool;miss;single;hit;single;hit;at_most_one(+shadow);hit;0
+X1;pool;hidden_hop;pool;hit;pool;hit;pool;hit;pool(+shadow);hit;0

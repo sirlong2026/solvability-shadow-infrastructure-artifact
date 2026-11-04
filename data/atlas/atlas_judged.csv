@@ -1,0 +1,6 @@
+tag,msm,target,kind,V,winner,equivalent,kappa,obs,probes_ok,union_certs,prior,note
+google2012,1002676,www.google.com,sslcert_snapshot,(车队统计),,,,{},81,1,超大规模多前端服务（公开事实）；2012 快照，Atlas 保留部分结果,one-off 快照：每视角 1 次握手，不进四态判卷（o₃ 闸），仅车队统计
+facebook2012,1002725,www.facebook.com,sslcert_snapshot,(车队统计),,,,{},1163,3,超大规模多前端服务（公开事实）；2012 快照,one-off 快照：每视角 1 次握手，不进四态判卷（o₃ 闸），仅车队统计
+torproject2013,1006513,www.torproject.org,sslcert_snapshot,(车队统计),,,,{},417,2,镜像分发集群（公开事实）；2013 批次（_interval 累积 64k 结果）,one-off 快照：每视角 1 次握手，不进四态判卷（o₃ 闸），仅车队统计
+ovh2013,1007611,www.ovh.com,sslcert_snapshot,(车队统计),,,,{},49,1,主机商多前端（公开事实）；2013 快照,one-off 快照：每视角 1 次握手，不进四态判卷（o₃ 闸），仅车队统计
+kroot-ping,1001,k.root-servers.net,ping_recurring,不可观测,,(κ不足),0.167,"{""o1"": ""negative"", ""o2"": ""unobservable"", ""o3"": ""unobservable"", ""o4"": ""unobservable"", ""o5"": ""unobservable"", ""o6"": ""unobservable""}",13685,,根服务器 anycast（公开事实）；30min 固定窗，约 1.4 万视角×7.5 轮,Atlas 适配：o₂ 平台无 ICMP Timestamp → 结构性 unobservable；o₅ 无路径探测 → unobservable；o₃/o₆ 仅在短窗（≤48h）内判定

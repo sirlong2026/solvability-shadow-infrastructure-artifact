@@ -1,0 +1,188 @@
+{
+ "schema": "sensor-report/v2",
+ "sensor_id": "LT",
+ "host": "lab-host-redacted",
+ "os": "windows",
+ "python": "3.13.13",
+ "t_start": "2026-10-30T17:40:04Z",
+ "allow_cidr": [
+  "PUBLIC_LANDMARK/32"
+ ],
+ "source_ips": [
+  "172.20.160.1",
+  "192.168.195.1",
+  "192.168.232.1",
+  "192.168.59.223",
+  "PUBLIC_ADDR_04"
+ ],
+ "targets": [
+  {
+   "ip": "PUBLIC_LANDMARK",
+   "ttl": {
+    "supported": true,
+    "ttl_set": [
+     249
+    ],
+    "samples": 21,
+    "sent": 21,
+    "rtt_ms": [
+     11.0,
+     10.0,
+     11.0,
+     17.0,
+     8.0,
+     9.0,
+     9.0,
+     9.0,
+     10.0,
+     11.0,
+     17.0,
+     10.0,
+     10.0,
+     9.0,
+     8.0,
+     10.0,
+     11.0,
+     17.0,
+     10.0,
+     10.0,
+     11.0
+    ],
+    "ttl_source": "system_ping",
+    "ping_fanout": 3
+   },
+   "skew": {
+    "supported": false,
+    "error": "主机未实现 ICMP Timestamp（常态）"
+   },
+   "tls": {
+    "supported": true,
+    "port": 2443,
+    "unique_hashes": 2,
+    "hashes": [
+     "c0fdf35a5f35",
+     "461455fd18e4",
+     "461455fd18e4",
+     "461455fd18e4",
+     "c0fdf35a5f35",
+     "461455fd18e4",
+     "c0fdf35a5f35",
+     "461455fd18e4",
+     "c0fdf35a5f35",
+     "461455fd18e4",
+     "461455fd18e4",
+     "c0fdf35a5f35"
+    ],
+    "ciphers": [
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384"
+    ],
+    "sni_map": {
+     "a.mp.test": "461455fd18e4",
+     "b.mp.test": "c0fdf35a5f35",
+     "e.mp.fallback": "c0fdf35a5f35"
+    },
+    "sni_unique": 2,
+    "error": []
+   },
+   "rtt": {
+    "supported": true,
+    "samples": [
+     0.73,
+     0.61,
+     13.6,
+     0.66,
+     0.61,
+     0.5,
+     13.76,
+     0.65,
+     0.57,
+     0.5
+    ]
+   },
+   "path": {
+    "supported": true,
+    "hops": [
+     "PUBLIC_LANDMARK",
+     "PUBLIC_ADDR_02",
+     "10.10.254.1",
+     "10.0.254.2"
+    ],
+    "reached": true,
+    "tool": "tracert"
+   },
+   "ping": {
+    "supported": true,
+    "received": 4,
+    "sent": 4
+   },
+   "gate": {
+    "o1": {
+     "observable": true,
+     "reason": ""
+    },
+    "o2": {
+     "observable": false,
+     "reason": "主机未实现 ICMP Timestamp（常态）"
+    },
+    "o3": {
+     "observable": true,
+     "reason": ""
+    },
+    "o4": {
+     "observable": true,
+     "reason": ""
+    },
+    "o5": {
+     "observable": true,
+     "reason": ""
+    }
+   },
+   "kappa_view": 0.8
+  }
+ ],
+ "landmarks": [
+  {
+   "ip": "PUBLIC_ADDR_03",
+   "path": {
+    "supported": true,
+    "hops": [
+     "PUBLIC_ADDR_03",
+     "PUBLIC_ADDR_02",
+     "10.10.254.1",
+     "10.0.254.2"
+    ],
+    "reached": true,
+    "tool": "tracert"
+   }
+  },
+  {
+   "ip": "PUBLIC_LANDMARK",
+   "path": {
+    "supported": true,
+    "hops": [
+     "PUBLIC_LANDMARK",
+     "PUBLIC_ADDR_02",
+     "10.10.254.1",
+     "10.0.254.2"
+    ],
+    "reached": true,
+    "tool": "tracert"
+   }
+  }
+ ],
+ "t_end": "2026-10-30T17:41:39Z"
+}

@@ -1,0 +1,290 @@
+{
+ "schema": "sensor-report/v2",
+ "sensor_id": "s34",
+ "host": "lab-host-redacted",
+ "os": "linux",
+ "python": "3.9.9",
+ "t_start": "2026-10-30T17:39:23Z",
+ "allow_cidr": [
+  "PUBLIC_LANDMARK/32"
+ ],
+ "source_ips": [
+  "172.17.0.1",
+  "172.18.0.1",
+  "172.19.0.1",
+  "PUBLIC_ADDR_03"
+ ],
+ "targets": [
+  {
+   "ip": "PUBLIC_LANDMARK",
+   "ttl": {
+    "supported": true,
+    "ttl_set": [
+     63
+    ],
+    "samples": 20,
+    "sent": 20,
+    "rtt_ms": [
+     0.39,
+     0.33,
+     0.36,
+     0.32,
+     0.38,
+     0.33,
+     0.33,
+     0.35,
+     0.42,
+     0.37,
+     0.33,
+     0.39,
+     0.35,
+     0.37,
+     0.39,
+     0.29,
+     0.34,
+     0.35,
+     0.37,
+     0.3
+    ]
+   },
+   "skew": {
+    "supported": true,
+    "points": [
+     [
+      0.0,
+      1977900725
+     ],
+     [
+      0.0,
+      1977901726
+     ],
+     [
+      0.0,
+      1977902728
+     ],
+     [
+      0.0,
+      1977903729
+     ],
+     [
+      0.0,
+      1977904731
+     ],
+     [
+      0.0,
+      1977905732
+     ],
+     [
+      0.0,
+      1977906733
+     ],
+     [
+      0.0,
+      1977907734
+     ],
+     [
+      0.0,
+      1977908735
+     ],
+     [
+      0.1,
+      1977909736
+     ],
+     [
+      0.1,
+      1977910737
+     ],
+     [
+      0.1,
+      1977911738
+     ],
+     [
+      0.1,
+      1977912740
+     ],
+     [
+      0.1,
+      1977913741
+     ],
+     [
+      0.1,
+      1977914743
+     ],
+     [
+      0.1,
+      1977915744
+     ],
+     [
+      0.1,
+      1977916746
+     ],
+     [
+      0.1,
+      1977917747
+     ],
+     [
+      0.1,
+      1977918748
+     ],
+     [
+      0.1,
+      1977919750
+     ],
+     [
+      0.1,
+      1977920751
+     ],
+     [
+      0.1,
+      1977921753
+     ],
+     [
+      0.1,
+      1977922754
+     ],
+     [
+      0.1,
+      1977923756
+     ],
+     [
+      0.2,
+      1977924757
+     ],
+     [
+      0.2,
+      1977925759
+     ],
+     [
+      0.2,
+      1977926759
+     ],
+     [
+      0.2,
+      1977927762
+     ],
+     [
+      0.2,
+      1977928761
+     ],
+     [
+      0.2,
+      1977929763
+     ]
+    ],
+    "slope_ms_per_ms": 152210.186726,
+    "ntp_jumps": 29,
+    "backend_jumps": 0,
+    "noise_jumps": 0,
+    "max_step": 1003
+   },
+   "tls": {
+    "supported": true,
+    "port": 2443,
+    "unique_hashes": 1,
+    "hashes": [
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35",
+     "c0fdf35a5f35"
+    ],
+    "ciphers": [
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384",
+     "TLS_AES_256_GCM_SHA384"
+    ],
+    "sni_map": {
+     "a.mp.test": "c0fdf35a5f35",
+     "b.mp.test": "c0fdf35a5f35",
+     "e.mp.fallback": "c0fdf35a5f35"
+    },
+    "sni_unique": 1,
+    "error": []
+   },
+   "rtt": {
+    "supported": true,
+    "samples": [
+     0.51,
+     0.22,
+     0.27,
+     0.25,
+     0.23,
+     0.2,
+     0.19,
+     0.22,
+     0.2,
+     0.17
+    ]
+   },
+   "path": {
+    "supported": true,
+    "hops": [
+     "PUBLIC_LANDMARK"
+    ],
+    "reached": true,
+    "tool": "tracepath"
+   },
+   "ping": {
+    "supported": true,
+    "received": 4,
+    "sent": 4
+   },
+   "gate": {
+    "o1": {
+     "observable": true,
+     "reason": ""
+    },
+    "o2": {
+     "observable": true,
+     "reason": ""
+    },
+    "o3": {
+     "observable": true,
+     "reason": ""
+    },
+    "o4": {
+     "observable": true,
+     "reason": ""
+    },
+    "o5": {
+     "observable": true,
+     "reason": ""
+    }
+   },
+   "kappa_view": 1.0
+  }
+ ],
+ "landmarks": [
+  {
+   "ip": "PUBLIC_LANDMARK",
+   "path": {
+    "supported": true,
+    "hops": [
+     "PUBLIC_LANDMARK"
+    ],
+    "reached": true,
+    "tool": "tracepath"
+   }
+  }
+ ],
+ "t_end": "2026-10-30T17:40:03Z"
+}

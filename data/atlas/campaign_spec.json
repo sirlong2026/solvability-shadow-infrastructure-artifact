@@ -1,0 +1,52 @@
+{
+  "msm_id": 230764599,
+  "type": "sslcert",
+  "is_oneoff": false,
+  "probes_scheduled": 4,
+  "interval_sec": 21600,
+  "run_days": 3,
+  "is_public": true,
+  "created_utc": "2026-11-02 05:54:51",
+  "created_via": "web-ui (manual form, 2026-11-02)",
+  "note": "target = X1 RR VIP (value in data/lab20/x1 logs; zero-IP-on-disk policy: this spec stores only msm_id + schedule)",
+  "o3_ready_after_hours": 18,
+  "fetch": "GET https://atlas.ripe.net/api/v2/measurements/230764599/results/",
+  "planned": "interval 6h not exposed in UI -> platform default; end_time set by user ~2026-11-06; probes=4 global random (Area=All)",
+  "verify": "GET /api/v2/measurements/230764599/ after sync: confirm port=2443, is_public=true, actual interval",
+  "verified_utc": "2026-11-02 13:58:04",
+  "verified": {
+    "target_matches_x1_vip": true,
+    "port": 2443,
+    "is_oneoff": false,
+    "is_public": true,
+    "interval_sec_actual": 900,
+    "start_time": 1793685300,
+    "stop_time": 1794030300,
+    "note": "interval=15min (platform default, UI had no interval control); o3 gate (>=3 handshakes/vantage) met ~1h after start",
+    "o3_ready_local": "2026-11-03 evening (start ~11-03 16:35 +8, +1h for 3 samples)"
+  },
+  "status_20261103": {
+    "fetched_results": 48,
+    "succ_handshakes": 0,
+    "note": "all 48 = connect:timeout (05:58-09:44 UTC). Target X1 VIP unreachable even from inside campus (80/443/2443 timeout, ping 100% loss) -> director host/VIP likely powered off or unbound after lab20 freeze. Campaign still running until stop_time; once target restored, >=3 succ samples in ~45 min, then judge.",
+    "raw_file": "cam_230764599_raw.json"
+  },
+  "pilot_20261103": {
+    "host": "lab-host-redacted",
+    "deploy": "cloud_pilot/setup_pilot.sh + rr_proxy.py via paramiko; rrproxy under systemd (Restart=always)",
+    "verified_local": "listener 0.0.0.0:443 active; alternating certs A/B/A/B (CN=pilot-a.local / pilot-b.local)",
+    "blocker": "RESOLVED: Lighthouse firewall opened TCP 443",
+    "next": "user creates Atlas sslcert campaign (target=VM IP:443, recurring, 4 probes, public, 3d; optional ping) + stops 230764599 -> send msm id -> fetch+judge",
+    "verified_external": "public 443 reachable; certs alternate A/B/A/B/A/B from external network"
+  },
+  "closed_20261104": {
+    "final_results": 257,
+    "final_successful": 254,
+    "probes": 3,
+    "span_utc": "2026-11-03 14:46 -> 2026-11-04 12:01",
+    "verdict": "decidable c2 / union=2 / kappa=1/3 (unchanged across 11 -> 244 -> 254 samples)",
+    "paper_update": "§4.4 final-window numbers (257/254, ~85 per vantage, 28x gate minimum)",
+    "atlas_action": "measurement kept PUBLIC and citable (msm 231739937); stop = let expire at stop_time, DO NOT delete",
+    "infra_action": "revoke TCP 443 security-group rule; shut down / release the cloud VM"
+  }
+}
