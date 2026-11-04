@@ -27,6 +27,7 @@ rebuild figures require matplotlib and are optional.
 | Path | Content |
 |---|---|
 | `FORMALIZATION.md` | Full derivation behind the two headline properties sketched in Section 3.4 |
+| `.zenodo.json` | Deposit metadata (creator, ORCID, license, keywords) read automatically when a GitHub release is archived on Zenodo |
 | `engine/sensor_agent.py`, `sensor_compare.py` | Six-dimension observability gate, four-state verdict function, equivalence-class collapse |
 | `scripts/evaluate.py` | Pre-registered `EXPECT` truths and grading of S0-S7 |
 | `scripts/atlas_adapter.py` | RIPE Atlas result -> sensor bundle adapter; one-off vs recurring discipline |
